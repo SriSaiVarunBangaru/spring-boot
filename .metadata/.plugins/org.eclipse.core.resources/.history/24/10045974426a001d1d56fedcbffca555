@@ -1,0 +1,12 @@
+package com.spring.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@RequestMapping("/v1")
+public class productController {
+	
+	@Autowired
+	private 
+
+}

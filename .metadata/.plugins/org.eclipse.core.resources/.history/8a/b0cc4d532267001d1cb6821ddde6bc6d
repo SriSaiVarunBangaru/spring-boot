@@ -1,0 +1,12 @@
+package com.spring.model;
+
+public class Booking {
+	
+	int BookId;
+	String destination;
+	String dep_time;
+	String arr_time;
+	String date;
+	String origin;
+
+}

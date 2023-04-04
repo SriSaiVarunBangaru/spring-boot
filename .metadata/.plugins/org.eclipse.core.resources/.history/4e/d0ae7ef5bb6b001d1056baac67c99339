@@ -1,0 +1,19 @@
+package com.spring.model;
+
+public class tagModel {
+	
+	int tagId;
+	String tagDesc;
+	
+	public tagModel() {
+		
+	}
+	public tagModel(int tagId, String tagDesc) {
+		super();
+		this.tagId = tagId;
+		this.tagDesc = tagDesc;
+	}
+	
+	
+
+}

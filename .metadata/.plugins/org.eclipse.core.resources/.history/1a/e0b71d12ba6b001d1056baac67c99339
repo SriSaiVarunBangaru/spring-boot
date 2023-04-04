@@ -1,0 +1,11 @@
+package com.spring.model;
+
+public class productModel {
+	
+	@Id
+	@GeneratedValue(strategy=)
+	int id;
+	String productName;
+	int productCost;
+
+}

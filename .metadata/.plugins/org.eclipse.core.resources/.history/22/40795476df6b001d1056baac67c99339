@@ -1,0 +1,25 @@
+package com.spring;
+
+import java.math.BigInteger;
+
+import javax.persistence.Entity;
+
+@Entity
+public class model {
+	
+	private BigInteger id;
+	private String description;
+	
+	public model() {
+		
+	}
+	
+	public model(BigInteger id, String description) {
+		super();
+		this.id = id;
+		this.description = description;
+	}
+	
+	
+
+}

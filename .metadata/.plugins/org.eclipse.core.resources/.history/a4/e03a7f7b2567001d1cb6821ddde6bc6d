@@ -1,0 +1,72 @@
+package com.spring.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.spring.model.Booking;
+import com.spring.model.User;
+import com.spring.repository.UserRepository;
+
+
+@Service
+public class UserServiceImpl implements UserService{
+	
+	@Autowired
+	UserRepository userRepository;
+
+	 @Override 
+	 public void addUser(User user) 
+	 
+	 { 
+		 userRepository.save(user);
+		 
+	}
+	 
+
+	@Override
+	public List<User> getAllUsers() {
+		
+		List<User> user=userRepository.findAll();
+		return user;
+	}
+
+
+	@Override
+	public User fetchUserById(int id) {
+		User user=userRepository.findById(id).get();
+		return user;
+	}
+
+
+	@Override
+	public void deleteUserById(int id) {
+		userRepository.deleteById(id);
+		
+	}
+
+
+/*	@Override
+	public void addUserDetails(User user) {
+		
+		Booking booking=new Booking();
+		booking.getBookId();
+		booking.getOrigin();
+		booking.getArr_time();
+		booking.getDate();
+		booking.getDestination();
+		booking.getDep_time();
+		
+		*/
+		
+		
+	}
+
+
+
+
+
+	
+
+}

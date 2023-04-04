@@ -1,0 +1,27 @@
+package com.spring.model;
+
+public class Booking {
+	
+	int BookId;
+	String destination;
+	String dep_time;
+	String arr_time;
+	String date;
+	String origin;
+	
+	public Booking() {
+		
+	}
+	public Booking(int bookId, String destination, String dep_time, String arr_time, String date, String origin) {
+		super();
+		BookId = bookId;
+		this.destination = destination;
+		this.dep_time = dep_time;
+		this.arr_time = arr_time;
+		this.date = date;
+		this.origin = origin;
+	}
+	
+	
+
+}

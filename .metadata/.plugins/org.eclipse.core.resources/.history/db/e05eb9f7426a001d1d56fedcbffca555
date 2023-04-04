@@ -1,0 +1,7 @@
+package com.spring.service;
+
+public interface productInterface {
+	
+	public void addproducts();
+
+}

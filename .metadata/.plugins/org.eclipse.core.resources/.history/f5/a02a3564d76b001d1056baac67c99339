@@ -1,0 +1,21 @@
+package com.spring.exception;
+
+public class ErrorDetails {
+	
+	private String message;
+	private int status;
+	
+	public ErrorDetails() {
+		
+	}
+	
+	public ErrorDetails(String message, int status) {
+		super();
+		this.message = message;
+		this.status = status;
+	}
+	
+	
+	
+
+}

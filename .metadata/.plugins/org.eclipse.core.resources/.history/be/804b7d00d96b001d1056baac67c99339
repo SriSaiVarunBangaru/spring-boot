@@ -1,0 +1,21 @@
+package com.spring.exception;
+
+public class ErrorDetails {
+	
+	private Date timestamp;
+	private String message;
+	private String description;
+	
+	public ErrorDetails() {
+		
+	}
+	public ErrorDetails(Date timestamp, String message, String description) {
+		super();
+		this.timestamp = timestamp;
+		this.message = message;
+		this.description = description;
+	}
+	
+	
+
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="SpringBootProject-Product_Tag_Table"/>
+<aop-project name="PractisceSpringBoot"/>
+<aop-project name="SpringBootProject-Product_Tag_Table-1"/>
+<aop-project name="B-SpringBootCRUDOperation"/>
+<aop-project name="C-AirlineReservationProjectSpringBoot"/>
+<aop-project name="Product"/>
+<aop-project name="D-SpringBootProject"/>
+<aop-project name="SpringBootProject-Assignment2"/>
+<aop-project name="A-SpringBootEx1"/>
+<aop-project name="LibraryProject"/>
+</aop-reference-model>

@@ -1,0 +1,52 @@
+package com.spring.service;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.spring.model.productModel;
+import com.spring.repository.productRepository;
+
+@Service
+public class productImpl implements productInterface{
+	
+	@Autowired
+	productRepository ProductRepository;
+
+	@Override
+	public void addproducts(productModel model) {
+		ProductRepository.save(model);	
+	}
+
+	@Override
+	public void deleteProductById(int id) {
+		ProductRepository.deleteById(id);	
+	}
+
+	@Override
+	public productModel getproductById(int id) {
+		productModel model=ProductRepository.findById(id).get();
+		return model;
+	}
+
+	@Override
+	public productModel getproductByName(String prodName) {
+		productModel model=ProductRepository.getByProductName(prodName);
+		return null;
+	}
+
+	
+	
+
+	
+
+
+	
+	
+
+
+	
+	
+
+}

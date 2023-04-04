@@ -1,0 +1,37 @@
+package com.spring.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.spring.model.productModel;
+import com.spring.service.productService;
+
+@RestController
+@RequestMapping("/v1")
+public class productController {
+	
+    @Autowired
+	private productService ProductService;
+	
+    @RequestMapping("/add")
+    public void createProduct(productModel Model) {
+    	ProductService.addProduct(Model);
+    }
+    
+    @RequestMapping("/delete")
+    public void deleteProduct(int id) {
+    	ProductService.deleteProductById(id);
+    }
+    
+    @RequestMapping("/find/{id}")
+    public productModel findProductById(int id) {
+    	productModel Model=ProductService.findProductById(id);
+    	return Model;	
+    }
+    
+    
+    
+	
+
+}

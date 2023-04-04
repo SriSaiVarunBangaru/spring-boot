@@ -1,0 +1,9 @@
+package com.spring.model;
+
+public class tagsModel {
+	
+	int tagId;
+	String tagDescription;
+	
+
+}
